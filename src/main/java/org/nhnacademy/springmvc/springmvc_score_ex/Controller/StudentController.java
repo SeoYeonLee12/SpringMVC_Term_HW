@@ -36,7 +36,7 @@ public class StudentController {
         return "studentView";
     }
 
-    @GetMapping("/{studentId}")
+    @GetMapping("/{studentId}/sy")
     public String viewStudentHideScore( @RequestParam("hideScore") String hideScore
             , @ModelAttribute("student") Student student
             , ModelMap modelMap

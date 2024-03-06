@@ -17,6 +17,10 @@ public class Student {
     @Setter
     private  String comment;
 
+    public Student(){
+
+    }
+
 
     public Student(String name, String email, Integer score, String comment) {
         this.name = name;

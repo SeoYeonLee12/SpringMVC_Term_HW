@@ -1,0 +1,26 @@
+GET http://localhost:8080/students/3
+Accept: application/json
+
+###
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name" :  "seoyeon",
+  "email" : "yjmlp12@naver.com",
+  "score" : 4,
+  "comment" : "훌륭함"
+}
+
+###
+
+PUT http://localhost:8080/students/2
+Content-Type: application/json
+
+{
+  "namea" :  "jongyoon",
+  "email" : "joyo10@naver.com",
+  "score" : 3,
+  "comment" : "중간"
+}
+###
