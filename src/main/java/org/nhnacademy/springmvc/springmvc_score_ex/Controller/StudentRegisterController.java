@@ -22,7 +22,7 @@ public class StudentRegisterController {
 
     @GetMapping
     public String StudentRegisterForm(){
-        return "studentRegister";
+        return "thymeleaf/studentRegister";
     }
 
     @PostMapping

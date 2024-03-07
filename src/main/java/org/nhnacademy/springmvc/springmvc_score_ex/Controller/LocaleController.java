@@ -10,6 +10,6 @@ public class LocaleController {
 
     @GetMapping
     public String getLocale(){
-        return "index";
+        return "thymeleaf/index";
     }
 }

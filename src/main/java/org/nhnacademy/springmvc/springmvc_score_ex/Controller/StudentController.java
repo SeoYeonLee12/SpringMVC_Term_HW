@@ -33,7 +33,7 @@ public class StudentController {
                                 , ModelMap modelMap
                                 ){
         modelMap.put("student", student);
-        return "studentView";
+        return "thymeleaf/studentView";
     }
 
     @GetMapping("/{studentId}/sy")
@@ -43,12 +43,13 @@ public class StudentController {
     ){
         modelMap.put("hideScore", hideScore);
         modelMap.put("student", student);
-        return "studentView";
+        return "thymeleaf/studentView";
+
     }
 
     @GetMapping("/{studentId}/modify")
     public ModelAndView studentModifyForm(@ModelAttribute("student") Student student) {
-        ModelAndView mav = new ModelAndView("studentModify");
+        ModelAndView mav = new ModelAndView("thymeleaf/studentModify");
         mav.addObject("student", student);
         return mav;
     }

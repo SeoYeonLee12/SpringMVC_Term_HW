@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>학생 정보 조회</title>
+</head>
+<body>
+이름: <span th:text="${student.name}"></span><br />
+이메일: <span th:text="${student.email}"></span><br />
+<div th:if="${hideScore != 'yes'}">
+    성적: <span th:text="${student.score}"></span><br />
+    평가: <span th:text="${student.comment}"></span><br />
+</div>
+<br />
+<a th:href="@{/student/{id}/modify(id=${student.id})}">정보 수정</a><br />
+<a th:href="@{/student/register}">학생 추가</a><br />
+</body>
+</html>
